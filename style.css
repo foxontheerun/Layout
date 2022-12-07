@@ -11,15 +11,13 @@
     --red-level-color:  #EB5757;
     --level-indicator-elem2-color: #303549;
     --reservoir-color: #232532;
+    --fluid-color: #0089FF;
 }
 
 body {
     background: var(--main-bg-color);
     color: var(--main-text-color);
     height: auto;
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*font-size: 17px;*/
 }
 
 .container {
@@ -43,6 +41,25 @@ body {
     background: #272A38;
     justify-content: space-between;
     font-size: 13px;
+}
+
+
+.info div img {
+    margin-left: 14px;
+    margin-right: 13px;
+    height: 13.258986473083496px;
+    width: 16px;
+    left: 44px;
+    border-radius: 0px;
+}
+
+.info div span {
+    font-family: 'Tahoma';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #D7E2F2;
 }
 
 .info button {
@@ -84,6 +101,17 @@ body {
     background: rgba(39, 42, 56, 0.5);
     border-radius: 0px;
     align-self: flex-end;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.footer__text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    margin-right: 25px;
 }
 
 .item__weight-info {
@@ -97,6 +125,10 @@ body {
     margin-bottom: 9px;
 }
 
+.item__weight-info-number{
+    font-size: 26px;
+}
+
 .main-content {
     background: rgba(23, 24, 30, 0.5);
     flex-grow: 2;
@@ -107,7 +139,7 @@ body {
 }
 
 .item {
-    margin: 73px 1.6666%;
+    margin: 5vw 1.6666% 2vw 1.6666%;
     width: calc(14.285714% - 3.33333%);
 }
 
@@ -124,11 +156,11 @@ body {
     background: var(--level-indicator-elem2-color);
 }
 
-.level-indicator__header_level_red {
+.level_red {
  background: var(--red-level-color);
 }
 
-.level-indicator__elem1_level_green {
+.level_green {
     background: var(--green-level-color);
 }
 
@@ -142,7 +174,7 @@ body {
 }
 
 .level-indicator__reservoir__amount-of-substance {
-    background: #0089FF;
+    background: var(--fluid-color);
     height: 23px;
     /*position: absolute;*/
     /*bottom: 0;*/
@@ -184,6 +216,12 @@ body {
     justify-content: center;
     align-items: center;
     margin-right: 9px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
 }
 
 .item__percentage-level-text {
@@ -196,6 +234,13 @@ body {
     width: 120px;
 
     color: #FFFFFF;
+}
+
+.footer__color-explanation {
+    width: 23px;
+    height: 23px;
+    border-radius: 3px;
+    margin: 0 23px 0;
 }
 
 
@@ -229,15 +274,23 @@ body {
     .navbar li {
         margin: 0 3px 0 3px;
     }
-
+    .navbar {
+        display: none;
+    }
 }
 @media only screen and (max-width : 600px)  {
     .item {
         width: calc(50% - 3.33333%);
     }
 }
-@media only screen and (max-width : 533px)  {}
-@media only screen and (max-width : 360px)  {}
+@media only screen and (max-width : 533px)  {
+}
+@media only screen and (max-width : 370px)  {
+    .item {
+        width: 100%;
+        justify-self: center;
+    }
+}
 @media only screen and (max-width : 320px)  {}
 @media only screen and (max-width : 240px)  {}
 @media only screen and (max-width : 176px)  {}
