@@ -76,9 +76,6 @@ body {
 }
 
 .footer {
-    position: fixed;
-    left: 30px;
-    right: 30px;
     bottom: 35px;
     background: rgba(39, 42, 56, 0.5);
     border-radius: 0px;
@@ -103,13 +100,13 @@ body {
     background: rgba(23, 24, 30, 0.5);
     display: flex;
     flex-wrap:wrap;
-    padding: 42px 31px;
+    padding: 2.258% 1.6666%;
 }
 
 .item {
-    height: 50px;
-    margin: 31px;
-    width: calc(14.285714% - 62px);
+    /*height: 50px;*/
+    margin: 1.6666%;
+    width: calc(14.285714% - 3.33333%);
 }
 
 .level-indicator_ {
