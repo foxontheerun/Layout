@@ -17,6 +17,8 @@ body {
     background: var(--main-bg-color);
     color: var(--main-text-color);
     height: auto;
+    /*display: flex;*/
+    /*justify-content: center;*/
     /*font-size: 17px;*/
 }
 
@@ -24,7 +26,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 94vh;
-    max-width: 2400px;
+    max-width: 100vw;
     margin: 1.3% 1.5% 1.8% 1.5%;
 }
 
@@ -141,7 +143,7 @@ body {
 
 .level-indicator__reservoir__amount-of-substance {
     background: #0089FF;
-    height: 40px;
+    height: 23px;
     /*position: absolute;*/
     /*bottom: 0;*/
 }
@@ -198,35 +200,39 @@ body {
 
 
 @media only screen and (max-width : 1680px) {
+
+    .info button {
+        min-height: 2em;
+    }
     .item {
-        margin: 73px 1.6666%;
         width: calc(16.666666% - 3.33333%);
     }
 }
 
 @media only screen and (max-width : 1366px) {
     .item {
-        margin: 73px 1.6666%;
         width: calc(20% - 3.33333%);
     }
 }
-@media only screen and (max-width : 1280px) {}
+
 @media only screen and (max-width : 1024px) {
     .item {
-        margin: 73px 1.6666%;
         width: calc(25% - 3.33333%);
     }
 }
 @media only screen and (max-width : 800px)  {
     .item {
-        margin: 73px 1.6666%;
         width: calc(33.33333% - 3.33333%);
     }
 }
-@media only screen and (max-width : 768px)  {}
+@media only screen and (max-width : 768px)  {
+    .navbar li {
+        margin: 0 3px 0 3px;
+    }
+
+}
 @media only screen and (max-width : 600px)  {
     .item {
-        margin: 73px 1.6666%;
         width: calc(50% - 3.33333%);
     }
 }
