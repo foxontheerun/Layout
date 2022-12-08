@@ -43,6 +43,10 @@ body {
     font-size: 13px;
 }
 
+.info div {
+    display: flex;
+    align-items: center;
+}
 
 .info div img {
     margin-left: 14px;
@@ -53,19 +57,19 @@ body {
     border-radius: 0px;
 }
 
-.info div span {
+.info div div {
     font-family: 'Tahoma';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 14px;
+    /*line-height: 14px;*/
     color: #D7E2F2;
 }
 
 .info button {
     width: 190px;
     font-size: 13px;
-    min-height: 3em;
+    min-height: 4vh;
     background: #303549;
     border-radius: 4px;
     border: 0;
@@ -246,9 +250,6 @@ body {
 
 @media only screen and (max-width : 1680px) {
 
-    .info button {
-        min-height: 2em;
-    }
     .item {
         width: calc(16.666666% - 3.33333%);
     }
