@@ -11,22 +11,39 @@
 </head>
 <body>
     <div class="container">
-        <div class="info rectangle">
+        <div class="rectangle rectangle-info ">
             <div>
                 <img src="icon.svg"/>
                 <div>Информация по резервуарам</div>
             </div>
             <button>Панель администратора</button>
         </div>
-        <div class="navbar rectangle">
-            <li><a href="">АИ-92</a></li>
-            <li><a href="">КЕРОСИН</a></li>
-            <li><a href="">ДТ ЗИМНЕЕ</a></li>
-            <li><a href="">ТС-1</a></li>
-            <li><a href="">АИ-95</a></li>
-            <li><a href="">МАЗУТ</a></li>
-            <li><a href="">ГАЗОЙЛЬ</a></li>
-            <li><a href="">НЕФТЬ</a></li>
+        <div class="rectangle rectangle-navbar">
+            <a href="#">
+                <li>АИ-92</li>
+            </a>
+            <a href="#" >
+                <li  class="active">КЕРОСИН
+                </li>
+            </a>
+            <a href="#">
+                <li>ДТ ЗИМНЕЕ</li>
+            </a>
+            <a href="#">
+                <li>ТС-1</li>
+            </a>
+            <a href="#">
+                <li>АИ-95</li>
+            </a>
+            <a href="#">
+                <li>МАЗУТ</li>
+            </a>
+            <a href="#">
+                <li>ГАЗОЙЛЬ</li>
+            </a>
+            <a href="#">
+                <li>НЕФТЬ</li>
+            </a>
         </div>
         <div class="main-content">
             <div class="item">
@@ -214,15 +231,16 @@
                 </div>
             </div>
         </div>
-        <div class="footer rectangle">
-            <div class="footer__text">
+        <div class="rectangle-footer rectangle">
+            <div class="rectangle-footer__text">
                 <div>МАССА < 200</div>
                 <div>МАССА > 800</div>
             </div>
-            <div class="footer__color-explanation level_red "/></div>
-            <div class="footer__text"> 200 < МАССА < 800</div>
-
-        <div class="footer__color-explanation level_green "></div>
+            <div class="rectangle-footer__color-explanation level_red "></div>
+            <div class="rectangle-footer__text">
+                200 < МАССА < 800
+            </div>
+            <div class="rectangle-footer__color-explanation level_green "/></div>
         </div>
     </div>
 </body>
