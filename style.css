@@ -92,6 +92,7 @@ li {
 
 .rectangle-navbar a {
     text-decoration: none;
+    display: inline;
     color: #606580;
 }
 
