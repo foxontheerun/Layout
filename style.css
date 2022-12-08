@@ -9,9 +9,10 @@
     --main-text-color: white;
     --green-level-color: #00A99D;
     --red-level-color:  #EB5757;
-    --level-indicator-elem2-color: #303549;
+    --level-indicator-borders-color: #303549;
     --reservoir-color: #232532;
     --fluid-color: #0089FF;
+    --navbar-link-color: #606580;
 }
 
 body {
@@ -88,15 +89,16 @@ li {
 .rectangle-navbar {
     background: rgba(39, 42, 56, 0.5);
     justify-content: center;
+    flex-wrap:wrap;
 }
 
 .rectangle-navbar a {
     text-decoration: none;
     display: inline;
-    color: #606580;
+    color: var(--navbar-link-color);
 }
 
-.rectangle-navbar a li {
+.rectangle-navbar a div {
     width: 94px;
     font-family: 'Tahoma';
     font-style: normal;
@@ -110,13 +112,12 @@ li {
     min-height: 5.27vh;
 }
 
-.active, .rectangle-navbar a li:hover {
+.active, .rectangle-navbar a div:hover {
     border-bottom: var(--fluid-color) solid 2px;
     border-radius: 0px;
     background: linear-gradient(0deg, rgba(35, 120, 217, 0.25) 0%, rgba(35, 120, 217, 0) 25%);
     color: var(--main-text-color);
 }
-
 
 .rectangle-footer {
     bottom: 35px;
@@ -137,6 +138,27 @@ li {
     margin-right: 25px;
 }
 
+
+.main-content {
+    background: rgba(23, 24, 30, 0.5);
+    flex-grow: 2;
+    overflow: auto;
+    display: flex;
+    flex-wrap:wrap;
+    padding: 0 1.6666%;
+}
+
+.block {
+    margin: 5vw 1.6666% 2vw 1.6666%;
+    width: calc(14.285714% - 3.33333%);
+    display: flex;
+    justify-content: center;
+}
+
+.item {
+    width: 198px;
+}
+
 .item__weight-info {
     display: flex;
     justify-content: space-between;
@@ -152,20 +174,6 @@ li {
     font-size: 26px;
 }
 
-.main-content {
-    background: rgba(23, 24, 30, 0.5);
-    flex-grow: 2;
-    overflow: auto;
-    display: flex;
-    flex-wrap:wrap;
-    padding: 0 1.6666%;
-}
-
-.item {
-    margin: 5vw 1.6666% 2vw 1.6666%;
-    width: calc(14.285714% - 3.33333%);
-}
-
 .level-indicator_ {
     opacity: 0.89;
 }
@@ -176,7 +184,7 @@ li {
 
 .level-indicator__borders {
     height: 10.1px;
-    background: var(--level-indicator-elem2-color);
+    background: var(--level-indicator-borders-color);
 }
 
 .level_red {
@@ -196,10 +204,23 @@ li {
     flex-direction: column-reverse;
 }
 
-.level-indicator__reservoir__amount-of-substance {
+.level-indicator__reservoir-amount-of-substance {
     background: var(--fluid-color);
-    height: 23px;
 }
+
+.level-18 {
+    height: 18%;
+}
+.level-98 {
+    height: 98%;
+}
+.level-68 {
+    height: 68%;
+}
+.level-75 {
+    height: 75%;
+}
+
 
 .line {
     position: absolute;
@@ -207,7 +228,8 @@ li {
     border-bottom: 1px solid #ffffff;
     margin-bottom: 25%;
     margin-left: 9.5%;
-    width: 20.5%;
+    width: 38px;
+
 }
 
 .line__1 {
@@ -265,42 +287,42 @@ li {
 
 
 @media only screen and (max-width : 1680px) {
-
-    .item {
+    .block {
         width: calc(16.666666% - 3.33333%);
     }
 }
 
 @media only screen and (max-width : 1366px) {
-    .item {
+    .block {
         width: calc(20% - 3.33333%);
     }
 }
 
-@media only screen and (max-width : 1024px) {
-    .item {
+@media only screen and (max-width : 1200px) {
+    .block {
         width: calc(25% - 3.33333%);
     }
 }
-@media only screen and (max-width : 800px)  {
-    .item {
+@media only screen and (max-width : 950px)  {
+    .block {
         width: calc(33.33333% - 3.33333%);
     }
 }
-@media only screen and (max-width : 768px)  {
-    .rectangle-navbar li {
-        margin: 0 3px 0 3px;
+@media only screen and (max-width : 840px)  {
+    .rectangle-navbar a li {
+        margin: 0;
+        width: 85px;
     }
 }
-@media only screen and (max-width : 600px)  {
-    .item {
+
+@media only screen and (max-width : 700px)  {
+    .block {
         width: calc(50% - 3.33333%);
     }
 }
-@media only screen and (max-width : 533px)  {
-}
-@media only screen and (max-width : 370px)  {
-    .item {
+
+@media only screen and (max-width : 450px)  {
+    .block {
         width: 100%;
         justify-self: center;
     }
