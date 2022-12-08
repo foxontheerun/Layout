@@ -180,8 +180,6 @@ body {
 .level-indicator__reservoir__amount-of-substance {
     background: var(--fluid-color);
     height: 23px;
-    /*position: absolute;*/
-    /*bottom: 0;*/
 }
 
 .line {
@@ -236,8 +234,7 @@ body {
     line-height: 16px;
     height: 48px;
     width: 120px;
-
-    color: #FFFFFF;
+    color: var(--main-text-color);
 }
 
 .footer__color-explanation {
